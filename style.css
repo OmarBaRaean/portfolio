@@ -71,7 +71,7 @@ header .links a:hover {
 }
 
 /*------------------------------- the mobile header ------------------------------------- */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 720px) {
   #desktop-nav {
     display: none;
   }
@@ -218,22 +218,25 @@ section {
 .profile_right:last-child {
   height: 12vh;
   padding: 5px;
+  display: flex;
+  gap: 20px;
 }
-.profile .small_img:hover {
+.profile i {
   cursor: pointer;
+  font-size: 50px;
 }
+/*--------------------- the profile mobile--------------------- */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 720px) {
   #profileSec {
     flex-direction: column;
     width: 100%;
+    height: 100%;
     align-items: center;
   }
-
-  #profileImg img {
+  .profile {
     width: 100%;
-    height: 100%;
-    border-radius: 60%;
+    height: 90%;
   }
 }
 
@@ -273,8 +276,34 @@ section {
   border-radius: 25%;
 }
 #about_txt {
+  width: 100%;
   grid-area: c;
 }
+
+/*--------------------- the about mobile--------------------- */
+@media screen and (max-width: 720px) {
+  #about {
+    grid-template-areas:
+      ". a a a a a"
+      ". b b b . ."
+      ". b b b . ."
+      "c c c c c c";
+  }
+  #about h1 {
+    font-size: 3rem; /* Adjust font size for mobile */
+  }
+
+  #about_img {
+    width: 100%; /* Adjust width for mobile */
+    grid-area: b;
+  }
+
+  #about_txt {
+    width: 100%; /* Ensure full width */
+    grid-area: c;
+  }
+}
+
 /*--------------------- the skills labtop--------------------- */
 #skills {
   width: 100%;
@@ -305,10 +334,8 @@ section {
 }
 
 #skills_section::-webkit-scrollbar {
-  background-color: black;
-}
-#skills_section::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
+  width: 0; /* Hide scrollbar width */
+  background: transparent; /* Hide scrollbar background */
 }
 
 /* Scrollbar track */
@@ -337,7 +364,6 @@ section {
   height: 100%;
   text-align: center;
   margin-right: 2%;
-  background-color: ;
 }
 
 #skills_section > .column:last-child {
@@ -375,6 +401,17 @@ section {
 }
 .skill-hover .skill_name {
   display: inline;
+}
+/*--------------------- the skills mobile--------------------- */
+@media screen and (max-width: 720px) {
+  #skills_section > .column {
+    flex: 0 0 45%; /* Flex-grow set to 0 (don't grow), Flex-shrink set to 0 (don't shrink), Flex-basis set to 30% */
+    height: 100%;
+    text-align: center;
+  }
+  #skills_section::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /*--------------------- the contact labtop--------------------- */
@@ -424,4 +461,16 @@ section {
   color: rgb(36, 38, 42);
   background: rgb(238, 238, 238);
   border-color: rgb(238, 238, 238);
+}
+/*--------------------- the contact mobile--------------------- */
+@media screen and (max-width: 720px) {
+  #contactInfo {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: spa;
+  }
+  #contBtn {
+    height: 30%;
+    width: 100%;
+  }
 }
