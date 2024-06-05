@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my protfolio</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- lineicons.com -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -35,21 +47,21 @@
     </header>
 
     <main>
-      <section id="profile">
+      <section id="profileSec">
         <div class="profile" id="profileImg">
           <img src="sources\DSC01439.JPG" alt="my picture" />
         </div>
         <div class="profile">
-          <div class="profile_left">
+          <div class="profile_right">
             <p>hello i am</p>
             <h1>omar ba raean</h1>
             <p>a software enenginer</p>
           </div>
-          <div class="profile_left">
+          <div class="profile_right">
             <button id="cv" class="profile_btn">download cv</button>
-            <button id="contact" class="profile_btn">contact Info</button>
+            <button id="contactBtn" class="profile_btn">contact Info</button>
           </div>
-          <div class="profile_left">
+          <div class="profile_right">
             <img
               class="small_img"
               src="sources\githubb blue.png"
@@ -88,29 +100,81 @@
         <h1>skills</h1>
         <div id="skills_section">
           <div class="column">
-            <div class="skill">ss</div>
-            <div class="skill">ss</div>
-            <div class="skill">ss</div>
-            <div class="skill">ss</div>
+            <div class="skill">
+              <i class="fa-brands fa-js" style="color: #ffd43b"></i>
+              <p class="skill_name">java script</p>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-html5" style="color: #ff893b"></i>
+              <p class="skill_name">html5</p>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-css3"></i>
+              <p class="skill_name">css</p>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-java"></i>
+              <p class="skill_name">java</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="skill">
+              <i class="fa-brands fa-python"></i>
+              <p class="skill_name">python</p>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-react"></i>
+              <p class="skill_name">react</p>
+            </div>
+
+            <div class="skill">
+              <i class="lni lni-flutter"></i>
+              <p class="skill_name">flutter</p>
+            </div>
+            <div class="skill">
+              <i class="lni lni-nextjs"></i>
+              <p class="skill_name">next.js</p>
+            </div>
           </div>
           <div class="column">
-            <div class="skill">ss</div>
-            <div class="skill">ss</div>
-            <div class="skill">ss</div>
-            <div class="skill">ss</div>
+            <div class="skill">
+              <i class="lni lni-postgresql" style="color: rgb(255, 0, 242)"></i>
+              <p class="skill_name">postgresql</p>
+            </div>
+            <div class="skill">
+              <i class="lni lni-github-original"></i>
+              <p class="skill_name">github</p>
+            </div>
+            <div class="skill">
+              <i class="lni lni-git"></i>
+              <p class="skill_name">git</p>
+            </div>
+            <div class="skill">
+              <i>c#</i>
+            </div>
           </div>
           <div class="column">
-            <div class="skill">ss</div>
-            <div class="skill">ss</div>
-            <div class="skill">ss</div>
-            <div class="skill">ss</div>
-          </div>
-          <div class="column">
-            <div class="skill">ss</div>
+            <div class="skill">
+              <p class="skill_name">sssss</p>
+            </div>
             <div class="skill">ss</div>
             <div class="skill">ss</div>
             <div class="skill">ss</div>
           </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h1>contact us</h1>
+
+        <div id="contactInfo">
+          <button id="contBtn">
+            <i class="fa-solid fa-envelope"></i> email
+          </button>
+          <button id="contBtn">
+            <i class="fa-brands fa-linkedin-in"></i> linkedin
+          </button>
+          <button id="contBtn"><i class="fa-solid fa-phone"></i> phone</button>
         </div>
       </section>
     </main>
