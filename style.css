@@ -404,6 +404,9 @@ section {
 }
 /*--------------------- the skills mobile--------------------- */
 @media screen and (max-width: 720px) {
+  .skill i {
+    font-size: 4rem;
+  }
   #skills_section > .column {
     flex: 0 0 45%; /* Flex-grow set to 0 (don't grow), Flex-shrink set to 0 (don't shrink), Flex-basis set to 30% */
     height: 100%;
