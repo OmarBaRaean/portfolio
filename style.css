@@ -116,7 +116,7 @@ header .links a:hover {
 .mlinks a {
   display: block;
   border-bottom: thin solid;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   font-size: 1rem;
   color: white;
