@@ -125,7 +125,7 @@ header .links a:hover {
 }
 
 .mlinks.on {
-  max-height: 150px;
+  max-height: 200px;
 }
 
 .hamburger-icon.on span:first-child {
@@ -385,6 +385,10 @@ section {
   font-size: 5rem;
 }
 
+.skill i img {
+  height: auto;
+  width: 23%;
+}
 .skill-hover {
   background-color: rgba(104, 129, 162, 0.452);
   height: 23%;
